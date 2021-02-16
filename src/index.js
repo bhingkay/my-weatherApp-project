@@ -13,11 +13,8 @@ function showDetails(response) {
   showHumidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   showWind.innerHTML = `Wind: ${windSpeed} km/h`;
 }
-function search(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
-  let city = cityInput.value;
 
+function searchCity(city) {
   if (city !== "") {
     let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
     let units = "metric";
@@ -28,6 +25,12 @@ function search(event) {
   } else {
     alert("Please type a city...");
   }
+}
+function search(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#city-input");
+  //let city = cityInput.value;
+  searchCity(city);
 }
 
 function showLocation(position) {
@@ -50,3 +53,5 @@ searchBtn.addEventListener("click", search);
 
 let currentBtn = document.querySelector("#current-location-button");
 currentBtn.addEventListener("click", getLocation);
+
+searchCity("New York");
