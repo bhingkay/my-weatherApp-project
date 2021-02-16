@@ -15,20 +15,20 @@ function showDetails(response) {
 }
 
 function searchCity(city) {
-  // if (city !== "") {
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  if (city !== "") {
+    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
-  axios.get(apiUrl).then(showDetails);
-  //} else {
-  //  alert("Please type a city...");
-  //}
+    axios.get(apiUrl).then(showDetails);
+  } else {
+    alert("Please type a city...");
+  }
 }
 function search(event) {
   event.preventDefault();
-  let city = document.querySelector("#city-input").value;
-  //let city = cityInput.value;
+  let cityInput = document.querySelector("#city-input");
+  let city = cityInput.value;
   searchCity(city);
 }
 
