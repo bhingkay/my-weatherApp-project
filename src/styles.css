@@ -16,6 +16,14 @@ h5 {
   text-align: center;
   font-size: 15px;
 }
+img {
+  margin-top: 5px;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+}
 
 ul {
   margin: 0 0 10px;
