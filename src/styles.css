@@ -1,6 +1,7 @@
 body {
   font-family: arial, sans-serif;
   background-image: url("/images/nature3.jpg");
+  background-size: cover;
 }
 
 h1 {
