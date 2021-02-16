@@ -84,3 +84,7 @@ li {
   margin-top: -100px;
   font-weight: bold;
 }
+
+.grid {
+  border: 1px solid blanchedalmond;
+}
