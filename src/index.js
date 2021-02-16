@@ -48,7 +48,7 @@ function getLocation(event) {
 }
 
 let searchBtn = document.querySelector("#search-btn");
-searchBtn.addEventListener("submit", search);
+searchBtn.addEventListener("click", search);
 
 let currentBtn = document.querySelector("#current-location-button");
 currentBtn.addEventListener("click", getLocation);
