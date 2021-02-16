@@ -17,22 +17,36 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" >
+        <form class="search-form">
           <div class="row">
             <div class="col-6">
-              <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off" id="city-input" class="form-control shadow-sm">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
             </div>
             <div class="col-3">
-              <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" id="search-btn">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+                id="search-btn"
+              />
             </div>
 
             <div class="col-3">
-              <button class="btn btn-success w-100" id="current-location-button">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
                 Current
               </button>
             </div>
           </div>
-        
         </form>
         <h1 id="show-city">New York</h1>
         <ul>
@@ -43,57 +57,83 @@
           <div class="col-6">
             <div class="clearfix">
               <div class="float-left">
-              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon" class="weather-icon float-left" >
-                <span class="temperature" id="unit">19</span
-                ><span class="units">
-                  <a id="to-celsius">°C </a>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="cloudy icon"
+                  class="weather-icon float-left"
+                />
+                <span class="temperature" id="unit">19</span>
+                <span class="units">
+                  <a id="to-celsius">°C |</a><a href="#"> °F </a></span
+                >
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li id = "show-humidity">Humidity: 77%</li>
+              <li id="show-humidity">Humidity: 77%</li>
               <li id="show-wind">Wind: 8 km/h</li>
             </ul>
           </div>
         </div>
-          <div class="row">
-        <div class="col-2">
-          <h5> Mon </h5>
-          <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png " alt="">
-      <p> 29°C</p>
-        </div>
-        <div class="col-2">
-            <h5> Tues </h5>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png" alt="">
-            <p> 31°C</p>
+        <div class="row">
+          <div class="col-2">
+            <h5>Mon</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png "
+              alt=""
+            />
+            <p>29°C</p>
           </div>
           <div class="col-2">
-              <h5> Wed </h5>
-              <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
-              <p> 31°C</p>
-            </div>
-            <div class="col-2">
-                <h5> Thu</h5>
-                <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
-                <p> 20°C</p>
-              </div>
-              <div class="col-2">
-                  <h5> Fri </h5>
-                  <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
-                  <p> 29°C</p>
-                </div>
-                <div class="col-2">
-                    <h5> Sat </h5>
-                    <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
-                    <p> 30°C</p>
-                  </div>
-       
+            <h5>Tues</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
+              alt=""
+            />
+            <p>31°C</p>
+          </div>
+          <div class="col-2">
+            <h5>Wed</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <p>31°C</p>
+          </div>
+          <div class="col-2">
+            <h5>Thu</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <p>20°C</p>
+          </div>
+          <div class="col-2">
+            <h5>Fri</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+              alt=""
+            />
+            <p>29°C</p>
+          </div>
+          <div class="col-2">
+            <h5>Sat</h5>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+              alt=""
+            />
+            <p>30°C</p>
+          </div>
         </div>
       </div>
       <div class="footer">
-        <a href="https://github.com/bhingkay/my-weatherApp-project" target="_blank">Open-source code by:</a><span>Aljeve Rudenas</span>
-       </div>
+        <a
+          href="https://github.com/bhingkay/my-weatherApp-project"
+          target="_blank"
+          >Open-source code by:</a
+        ><span>Aljeve Rudenas</span>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
