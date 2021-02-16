@@ -27,7 +27,7 @@ function searchCity(city) {
 }
 function search(event) {
   event.preventDefault();
-  let city = document.querySelector("#city-input");
+  let city = document.querySelector("#city-input").value;
   //let city = cityInput.value;
   searchCity(city);
 }
@@ -46,9 +46,9 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showLocation);
 }
-debugger;
+
 let searchBtn = document.querySelector("#search-btn");
-searchBtn.addEventListener("click", search);
+searchBtn.addEventListener("submit", search);
 
 let currentBtn = document.querySelector("#current-location-button");
 currentBtn.addEventListener("click", getLocation);
