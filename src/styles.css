@@ -87,4 +87,6 @@ li {
 
 .grid {
   border: 1px solid blanchedalmond;
+  border-radius: 5px;
+  padding: 10px;
 }
